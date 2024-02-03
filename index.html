@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Habilitación de jugadores</title>
+</head>
+<body>
+    <h1 id="title">Habilitaciones</h1>
+    <p id="description">Ingrese sus datos correctos por favor</p>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org" method="post">
+        
+        <fieldset>
+            <label for="name" id="name-label">Nombre
+                <input type="text" name="name" id="name" placeholder="Nombre completo" required>
+            </label>
+
+            <label for="ID-number" id="ID-number-label">CI
+                <input type="text" name="ID-number" id="ID-number" placeholder="Número de carnet" required>
+            </label>
+
+            <label for="age" id="age-label">Edad
+                <input type="number" name="age" id="age" min="3" max="100" placeholder="Edad actual" required>
+            </label>
+
+            <label for="birht-date">Fecha de nacimiento
+                <input type="date" name="birht-date" id="birht-date" required>
+            </label>
+
+            <label>Género</label>
+            <label for="male">
+                <input value="male" type="radio" name="user-genre" id="male" class="inline">Hombre
+            </label>
+
+            <label for="female">
+                <input value="female" type="radio" name="user-genre" id="female" class="inline">Mujer
+            </label>
+
+            <label for="user-photo">Fotografia del jugador/a
+                <input type="file" id="user-photo" name="user-photo" required>
+            </label>
+            
+        </fieldset>
+        
+        <fieldset>
+            <label>Seleccione su equipo y categoría</label>
+
+            <label for="teams">
+                <select name="teams" id="teams">
+                    <option value="payrumani">Payrumani</option>
+                    <option value="penarol">Peñarol</option>
+                    <option value="san-jose">San José</option>
+                </select>
+            </label>
+
+            <label for="dropdown-basketball" class="selector-label">Categorías de Básquetbol
+                <select id="dropdown-basketball" name="leagues">
+                    <option value="Honor">1ra de Honor</option>
+                    <option value="Acenso1">1ra de Acenso</option>
+                    <option value="Acenso2">2da de Acenso</option>
+                    <option value="Acenso3">3ra de Acenso</option>
+                </select>
+            </label>
+            <div class="teams-on-category">
+                <label for="team-a-basketball">
+                    <input type="radio" name="basquetball-teams" id="team-a-basketball" class="inline" required>Equipo A
+                </label>
+                <label for="team-b-basketball">
+                    <input type="radio" name="basquetball-teams" id="team-b-basketball" class="inline" required>Equipo B
+                </label>
+            </div>
+            
+            <label for="dropdown-soccer" class="selector-label">Categorías de Fútbol
+                <select id="dropdown-soccer" name="leagues">
+                    <option value="Honor-futbol">1ra de Honor</option>
+                    <option value="Acenso1-futbol">1ra de Acenso</option>
+                    <option value="Acenso2-futbol">2da de Acenso</option>
+                    <option value="Acenso3-futbol">3ra de Acenso</option>
+                </select>
+            </label>
+            <div class="teams-on-category">
+                <label for="team-a-soccer">
+                    <input type="radio" name="soccer-teams" id="team-a-soccer" class="inline" required>Equipo A
+                </label>
+                <label for="team-b-soccer">
+                    <input type="radio" name="soccer-teams" id="team-b-soccer" class="inline" required>Equipo B
+                </label>
+            </div>
+
+            <!--
+            <label>Another question about it</label>
+            <label for="check-one">
+                <input type="checkbox" value="1" name="check-one" id="check-one" class="inline">Check this one
+            </label>
+            <label for="check-two">
+                <input type="checkbox" value="2" name="check-two" id="check-two" class="inline">Check this one
+            </label>
+            <label for="check-three">
+                <input type="checkbox" value="3" name="check-three" id="check-three" class="inline">Check other one
+            </label>
+            <label for="check-four">
+                <input type="checkbox" value="4" name="check-four" id="check-four" class="inline">Check another one
+            </label>
+            <label for="check-five">
+                <input type="checkbox" value="5" name="check-five" id="check-five" class="inline">Check it out
+            </label>
+            <label for="check-six">
+                <input type="checkbox" value="6" name="check-six" id="check-six" class="inline">Check last one
+            </label> -->
+        </fieldset>
+
+        <!-- <fieldset>
+            <label for="additional-comments">Enter comments you want
+                <textarea name="comments" id="additional-comments" cols="30" rows="3" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset> -->
+        <input type="submit" value="Enviar" id="submit">
+    </form>
+</body>
+</html>
